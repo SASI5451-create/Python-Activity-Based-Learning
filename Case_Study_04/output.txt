@@ -1,0 +1,27 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_04
+==================================================
+
+--- Test 1 (Default stock audit) ---
+STDIN INPUT:
+''
+EXIT CODE: 0
+STDOUT OUTPUT:
+======================================================================
+             WAREHOUSE INVENTORY RECONCILIATION REPORT            
+======================================================================
+Item Name         System Qty  Physical Qty    Diff  Status          
+----------------------------------------------------------------------
+Rice Bags                150           143      -7  DISCREPANCY     
+Sugar Bags                80            85       5  OK              
+Oil Cans                  45            38      -7  DISCREPANCY     
+Wheat Bags               200           200       0  OK              
+Salt Packets              30            18     -12  DISCREPANCY REORDER
+Dal Bags                  60            58      -2  OK              
+======================================================================
+Total Items Audited       : 6
+Discrepancies Detected    : 3
+Items Requiring Reorder   : 1
+======================================================================
+
+
