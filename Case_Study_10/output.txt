@@ -1,0 +1,138 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_10
+==================================================
+
+--- Test 1 (Rice Meal x4, Dosa x3 - Discount) ---
+STDIN INPUT:
+'2\n6\n4\n2\n3\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+=============================================
+             CAMPUS CANTEEN MENU             
+=============================================
+No. Item Name        Price (Rs.)     Stock
+---------------------------------------------
+1   Idli                   20.00        50
+2   Dosa                   30.00        40
+3   Sambar                 10.00        80
+4   Tea                     8.00       100
+5   Coffee                 12.00        60
+6   Rice Meal              60.00        20
+=============================================
+
+How many distinct items do you want to order? 
+Order item 1:
+  Enter item number (1-6):   Enter quantity for Rice Meal:   Added 4 x Rice Meal to cart.
+
+Order item 2:
+  Enter item number (1-6):   Enter quantity for Dosa:   Added 3 x Dosa to cart.
+
+=============================================
+                 CANTEEN BILL                
+=============================================
+Item              Qty      Rate       Total
+---------------------------------------------
+Rice Meal           4     60.00      240.00
+Dosa                3     30.00       90.00
+---------------------------------------------
+Subtotal                       Rs.     330.00
+Discount (10%)                -Rs.      33.00
+=============================================
+FINAL PAYABLE                  Rs.     297.00
+=============================================
+
+---------------------------------------------
+            LOW STOCK ALERT REPORT           
+---------------------------------------------
+  All inventory items are adequately stocked.
+---------------------------------------------
+
+
+--- Test 2 (Small order under 200 - No discount) ---
+STDIN INPUT:
+'2\n4\n2\n5\n2\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+=============================================
+             CAMPUS CANTEEN MENU             
+=============================================
+No. Item Name        Price (Rs.)     Stock
+---------------------------------------------
+1   Idli                   20.00        50
+2   Dosa                   30.00        40
+3   Sambar                 10.00        80
+4   Tea                     8.00       100
+5   Coffee                 12.00        60
+6   Rice Meal              60.00        20
+=============================================
+
+How many distinct items do you want to order? 
+Order item 1:
+  Enter item number (1-6):   Enter quantity for Tea:   Added 2 x Tea to cart.
+
+Order item 2:
+  Enter item number (1-6):   Enter quantity for Coffee:   Added 2 x Coffee to cart.
+
+=============================================
+                 CANTEEN BILL                
+=============================================
+Item              Qty      Rate       Total
+---------------------------------------------
+Tea                 2      8.00       16.00
+Coffee              2     12.00       24.00
+---------------------------------------------
+Subtotal                       Rs.      40.00
+Discount (0%)                 -Rs.       0.00
+=============================================
+FINAL PAYABLE                  Rs.      40.00
+=============================================
+
+---------------------------------------------
+            LOW STOCK ALERT REPORT           
+---------------------------------------------
+  All inventory items are adequately stocked.
+---------------------------------------------
+
+
+--- Test 3 (Order depleting stock to low) ---
+STDIN INPUT:
+'1\n6\n17\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+=============================================
+             CAMPUS CANTEEN MENU             
+=============================================
+No. Item Name        Price (Rs.)     Stock
+---------------------------------------------
+1   Idli                   20.00        50
+2   Dosa                   30.00        40
+3   Sambar                 10.00        80
+4   Tea                     8.00       100
+5   Coffee                 12.00        60
+6   Rice Meal              60.00        20
+=============================================
+
+How many distinct items do you want to order? 
+Order item 1:
+  Enter item number (1-6):   Enter quantity for Rice Meal:   Added 17 x Rice Meal to cart.
+
+=============================================
+                 CANTEEN BILL                
+=============================================
+Item              Qty      Rate       Total
+---------------------------------------------
+Rice Meal          17     60.00     1020.00
+---------------------------------------------
+Subtotal                       Rs.    1020.00
+Discount (10%)                -Rs.     102.00
+=============================================
+FINAL PAYABLE                  Rs.     918.00
+=============================================
+
+---------------------------------------------
+            LOW STOCK ALERT REPORT           
+---------------------------------------------
+  ALERT: Rice Meal has critically low stock (3 units left)!
+---------------------------------------------
+
+
