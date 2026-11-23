@@ -1,0 +1,29 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_09
+==================================================
+
+--- Test 1 (4x4 marks matrix evaluation) ---
+STDIN INPUT:
+''
+EXIT CODE: 0
+STDOUT OUTPUT:
+=================================================================
+                  MARKS MATRIX ANALYSIS REPORT                   
+=================================================================
+Student          Maths   Science   English    Python     Total      Avg
+-----------------------------------------------------------------
+Arun                88        76        65        92       321     80.2
+Bala                55        60        72        48       235     58.8
+Divya               91        85        88        95       359     89.8
+Esha                70        55        60        75       260     65.0
+-----------------------------------------------------------------
+Col Avg           76.0      69.0      71.2      77.5
+=================================================================
+PERFORMANCE HIGHLIGHTS:
+  Highest Mark in Class   : 95
+  Lowest Mark in Class    : 48
+  Top Performing Student  : Divya (Total: 359, Avg: 89.8)
+  Best Performing Subject : Python (Class Avg: 77.5)
+=================================================================
+
+
