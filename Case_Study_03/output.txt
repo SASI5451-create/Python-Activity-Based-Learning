@@ -1,0 +1,64 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_03
+==================================================
+
+--- Test 1 (63.33% - Needs recovery) ---
+STDIN INPUT:
+'60\n38\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+Enter total classes held so far: Enter classes attended so far: 
+==================================================
+          ATTENDANCE RECOVERY REPORT          
+==================================================
+Total Classes Held      : 60
+Classes Attended        : 38
+Current Attendance      : 63.33%
+--------------------------------------------------
+Status                  : Shortage of attendance (< 75%).
+Recovery Classes Needed : 28 consecutive classes
+Projected Total Classes : 88
+Projected Attended      : 66
+Projected Attendance    : 75.00%
+==================================================
+
+
+--- Test 2 (80.00% - Already sufficient) ---
+STDIN INPUT:
+'50\n40\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+Enter total classes held so far: Enter classes attended so far: 
+==================================================
+          ATTENDANCE RECOVERY REPORT          
+==================================================
+Total Classes Held      : 50
+Classes Attended        : 40
+Current Attendance      : 80.00%
+--------------------------------------------------
+Status                  : Attendance is sufficient (>= 75%).
+No additional recovery classes required.
+==================================================
+
+
+--- Test 3 (56.25% - Needs recovery) ---
+STDIN INPUT:
+'80\n45\n'
+EXIT CODE: 0
+STDOUT OUTPUT:
+Enter total classes held so far: Enter classes attended so far: 
+==================================================
+          ATTENDANCE RECOVERY REPORT          
+==================================================
+Total Classes Held      : 80
+Classes Attended        : 45
+Current Attendance      : 56.25%
+--------------------------------------------------
+Status                  : Shortage of attendance (< 75%).
+Recovery Classes Needed : 60 consecutive classes
+Projected Total Classes : 140
+Projected Attended      : 105
+Projected Attendance    : 75.00%
+==================================================
+
+
