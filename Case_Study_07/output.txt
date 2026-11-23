@@ -1,0 +1,24 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_07
+==================================================
+
+--- Test 1 (Duplicate transactions detection) ---
+STDIN INPUT:
+''
+EXIT CODE: 0
+STDOUT OUTPUT:
+=================================================================
+            BANK REPEATED TRANSACTION DETECTION REPORT           
+=================================================================
+TxID-1    TxID-2      Amount (Rs.)  Merchant       
+-----------------------------------------------------------------
+T001      T003              500.00  Amazon          [POTENTIAL DUPLICATE]
+T001      T007              500.00  Amazon          [POTENTIAL DUPLICATE]
+T002      T005             1200.00  Flipkart        [POTENTIAL DUPLICATE]
+T003      T007              500.00  Amazon          [POTENTIAL DUPLICATE]
+=================================================================
+Total Transactions Scanned : 7
+Total Duplicate Pairs Found: 4
+=================================================================
+
+
