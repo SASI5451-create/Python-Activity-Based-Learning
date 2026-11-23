@@ -1,0 +1,35 @@
+==================================================
+EXECUTION VERIFICATION LOG FOR Case_Study_06
+==================================================
+
+--- Test 1 (Timetable conflict evaluation) ---
+STDIN INPUT:
+''
+EXIT CODE: 0
+STDOUT OUTPUT:
+=================================================================
+             STUDENT TIMETABLE CONFLICT REPORT            
+=================================================================
+Enrolled Courses:
+  1. Mathematics            : 09:00 to 10:00
+  2. Physics                : 10:00 to 11:00
+  3. Chemistry              : 09:00 to 11:00
+  4. Python Lab             : 14:00 to 16:00
+  5. English                : 15:00 to 16:00
+  6. Engineering Graphics   : 11:00 to 13:00
+-----------------------------------------------------------------
+Conflict Analysis:
+  [CONFLICT 1] 'Mathematics' and 'Chemistry' overlap!
+             -> 'Mathematics' (09:00-10:00) vs 'Chemistry' (09:00-11:00)
+             -> Overlapping Window: 09:00 to 10:00
+  [CONFLICT 2] 'Physics' and 'Chemistry' overlap!
+             -> 'Physics' (10:00-11:00) vs 'Chemistry' (09:00-11:00)
+             -> Overlapping Window: 10:00 to 11:00
+  [CONFLICT 3] 'Python Lab' and 'English' overlap!
+             -> 'Python Lab' (14:00-16:00) vs 'English' (15:00-16:00)
+             -> Overlapping Window: 15:00 to 16:00
+=================================================================
+Total Conflicts Detected: 3
+=================================================================
+
+
